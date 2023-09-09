@@ -11,3 +11,5 @@
 - Redux Store setup and user info pushed into it after sign up/in
 - Navigated to /browse after Successful Sign Up/In
 - Sign Out Functionality
+- Added Constants folder for Constants
+- if the user is not logged in Redirect /browse to Login Page 
