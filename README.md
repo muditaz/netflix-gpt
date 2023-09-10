@@ -13,3 +13,9 @@
 - Sign Out Functionality
 - Added Constants folder for Constants
 - if the user is not logged in Redirect /browse to Login Page 
+- Generated TMDB API Key
+- Fetched Now Playing Movies and stored in redux store
+- Used Custom Hook for fetching Now Playing Movies
+- Segregated Browse into Main Container and Secondary Container
+- Video Title Component made, Fetched Trailer for Video and stored it in redux
+- Used Custom Hook for fetching Trailer for Video

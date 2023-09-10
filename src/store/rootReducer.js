@@ -8,6 +8,14 @@ const rootReducer = (state = initialState, action) => {
                 draft.userInfo = action.payload;
                 break;
             }
+            case 'setNowPlayingMovies': {
+                draft.movies.nowPlayingMovies = action.payload;
+                break;
+            }
+            case 'setTrailerVideo': {
+                draft.movies.trailerVideo = action.payload;
+                break;
+            }
             default:
                 break;
         }

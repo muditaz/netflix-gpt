@@ -1,23 +1,17 @@
-import { useSelector } from "react-redux";
+
 import Header from "./Header";
-import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
+import MainContainer from "./MainContainer";
+import SecondaryContainer from "./SecondaryContainer";
 
 const Browse = () => {
-    const userInfo = useSelector((state) => {return(state.userInfo)});
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        if(!userInfo) {
-            navigate("/");
-            return(() => {});
-        }
-    }, []);    
+    useNowPlayingMovies();
 
     return(
         <div>
             <Header />
-            Browse
+            <MainContainer />
+            <SecondaryContainer />
         </div>
     );
 };
