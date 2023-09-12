@@ -19,3 +19,5 @@
 - Segregated Browse into Main Container and Secondary Container
 - Video Title Component made, Fetched Trailer for Video and stored it in redux
 - Used Custom Hook for fetching Trailer for Video
+- Created a Custom Hook for fetching data for now playing movies, popular movies, top rated and upcoming movies. Also stored it in redux store.
+- Build Secondary Container component
