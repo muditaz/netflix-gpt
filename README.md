@@ -21,3 +21,5 @@
 - Used Custom Hook for fetching Trailer for Video
 - Created a Custom Hook for fetching data for now playing movies, popular movies, top rated and upcoming movies. Also stored it in redux store.
 - Build Secondary Container component
+- Toggle GPT Page functionality
+- Multi Lingual GPT Page

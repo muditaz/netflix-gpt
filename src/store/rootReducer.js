@@ -5,7 +5,11 @@ const rootReducer = (state = initialState, action) => {
     return produce(state, (draft) => {
         switch(action.type) {
             case 'setUserInfo': {
-                draft.userInfo = action.payload;
+                if(action.payload !== null) {
+                    draft.userInfo = action.payload;
+                } else {
+                    return({...initialState});
+                }
                 break;
             }
             case 'setMovieTypes': {
@@ -15,6 +19,13 @@ const rootReducer = (state = initialState, action) => {
             case 'setTrailerVideo': {
                 draft.movies.trailerVideo = action.payload;
                 break;
+            }
+            case 'toggleGPTSearchPage': {
+                draft.gptInfo.showGPTSearchPage = !draft.gptInfo.showGPTSearchPage;
+                break;
+            }
+            case 'setLanguage': {
+                draft.config.lang = action.payload;
             }
             default:
                 break;

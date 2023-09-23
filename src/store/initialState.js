@@ -8,6 +8,12 @@ const initialState = {
       upcoming: null,
     },
     trailerVideo: null,
+  },
+  gptInfo: {
+    showGPTSearchPage: false
+  },
+  config: {
+    lang: "en"
   }
 };
 
