@@ -10,7 +10,9 @@ const initialState = {
     trailerVideo: null,
   },
   gptInfo: {
-    showGPTSearchPage: false
+    showGPTSearchPage: false,
+    gptMovieResult: null,
+    tmdbMovieResult: null
   },
   config: {
     lang: "en"

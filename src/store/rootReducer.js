@@ -22,10 +22,19 @@ const rootReducer = (state = initialState, action) => {
             }
             case 'toggleGPTSearchPage': {
                 draft.gptInfo.showGPTSearchPage = !draft.gptInfo.showGPTSearchPage;
+                if(draft.gptInfo.showGPTSearchPage === false) {
+                    draft.gptInfo = {...initialState}.gptInfo;
+                }
                 break;
             }
             case 'setLanguage': {
                 draft.config.lang = action.payload;
+                break;
+            }
+            case 'setGPTMovieResults': {
+                draft.gptInfo.gptMovieResult = action.payload.gptMovies;
+                draft.gptInfo.tmdbMovieResult = action.payload.tmdbResults;
+                break;
             }
             default:
                 break;

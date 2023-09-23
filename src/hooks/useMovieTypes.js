@@ -17,6 +17,7 @@ const useMovieTypes = (movieTypesArray) => {
     };
 
     useEffect(() => {
+        if(!movieTypes[Object.keys(movieTypes)[0]])
         getMovieTypes();
     }, []);
 

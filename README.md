@@ -23,3 +23,8 @@
 - Build Secondary Container component
 - Toggle GPT Page functionality
 - Multi Lingual GPT Page
+- Used OpenAI API's to get Movie names for searched query
+- TMDP API call for Movie names got from OpenAI's API
+- GPTMovieSuggestions Component Populated
+- Added .env file
+- Memoization to avoid unnecessary API Calls
