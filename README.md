@@ -28,3 +28,4 @@
 - GPTMovieSuggestions Component Populated
 - Added .env file
 - Memoization to avoid unnecessary API Calls
+- Made site responsive
